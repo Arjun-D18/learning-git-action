@@ -8,5 +8,5 @@ jobs:
 
    steps:
         - name: show current working directory
-          runs: pwd
+          run: pwd
        
