@@ -1,0 +1,26 @@
+name: basic commands
+
+on: [push]
+
+jobs:
+  demo-commands:
+   runs-on: ubuntu-latest
+
+   steps:
+        - name: show current working directory
+          run: pwd
+
+        - run: ls -la
+
+        - name: prinnt today's date
+          run: date
+
+        - name: create and display a text file
+          run:
+            echo "This is demo file" > demo.txt
+            cat demo.txt
+
+        - name: make directory
+          run: 
+            mkdir Arjun
+       
